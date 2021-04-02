@@ -1,0 +1,14 @@
+
+= 문서 결재 시스템 API
+
+== document-approval service
+문서 결재를 지원해주는 서비스 입니다. 해당 문서는 서비스 이용에 참고 하시기 바랍니다.
+
+1) 회원 API
+
+2) 문서 API
+
+include::user-api.adoc[]
+
+include::document-api.adoc[]
+

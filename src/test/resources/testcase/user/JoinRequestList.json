@@ -1,0 +1,26 @@
+[
+  {
+    "userId": "test1",
+    "password": "password123",
+    "name": "테스트1",
+    "roles": [
+      "ROLE_USER"
+    ]
+  },
+  {
+    "userId": "test2",
+    "password": "password123",
+    "name": "테스트2",
+    "roles": [
+      "ROLE_USER"
+    ]
+  },
+  {
+    "userId": "test3",
+    "password": "password123",
+    "name": "테스트3",
+    "roles": [
+      "ROLE_USER"
+    ]
+  }
+]

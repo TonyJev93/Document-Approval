@@ -1,0 +1,970 @@
+{
+	"info": {
+		"_postman_id": "81f987b4-3e0e-4a98-b3c8-932906a183ad",
+		"name": "Z-Z",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "document-approval",
+			"item": [
+				{
+					"name": "사용자",
+					"item": [
+						{
+							"name": "회원가입",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"userId\": \"test3\",\r\n    \"password\": \"password123\",\r\n    \"name\": \"테스트1\",\r\n    \"roles\": [\r\n        \"ROLE_USER\"\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1.0/join",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1.0",
+										"join"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "회원가입",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"userId\": \"test1\",\r\n    \"password\": \"password123\",\r\n    \"name\": \"테스트1\",\r\n    \"roles\": [\r\n        \"ROLE_USER\"\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/api/v1.0/join",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"api",
+												"v1.0",
+												"join"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Vary",
+											"value": "Origin"
+										},
+										{
+											"key": "Vary",
+											"value": "Access-Control-Request-Method"
+										},
+										{
+											"key": "Vary",
+											"value": "Access-Control-Request-Headers"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 31 Mar 2021 17:52:58 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"userId\": \"test1\",\n    \"password\": \"{bcrypt}$2a$10$g/LjfbrqEnwEmVBD7XFlgO8XNRURPtE0RShHt0E6njrT6CpocIOK.\",\n    \"name\": \"테스트1\",\n    \"roles\": [\n        \"ROLE_USER\"\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "로그인",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"userId\": \"test1\",\r\n    \"password\": \"password123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1.0/login",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1.0",
+										"login"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "로그인",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"userId\": \"test1\",\r\n    \"password\": \"password123\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/api/v1.0/login",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"api",
+												"v1.0",
+												"login"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Vary",
+											"value": "Origin"
+										},
+										{
+											"key": "Vary",
+											"value": "Access-Control-Request-Method"
+										},
+										{
+											"key": "Vary",
+											"value": "Access-Control-Request-Headers"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 31 Mar 2021 17:53:06 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"jwtToken\": \"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0MSIsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJpYXQiOjE2MTcyMTMxODYsImV4cCI6MTYxNzIxNDk4Nn0.8Su_x5S_fyV8BcGxYpZzEzZ2Og3kbtMz1DtgN8qdUOs\"\n}"
+								}
+							]
+						},
+						{
+							"name": "회원삭제",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "X-AUTH-TOKEN",
+										"value": "{{X-AUTH-TOKEN}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1.0/admin/user/B",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1.0",
+										"admin",
+										"user",
+										"B"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "문서",
+					"item": [
+						{
+							"name": "문서 생성",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-AUTH-TOKEN",
+										"value": "{{X-AUTH-TOKEN}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"문서의 제목을 입력해 주세요.\",\r\n    \"classification\": \"REPORT\",\r\n    \"content\": \"문서의 내용을 입력해 주세요.\",\r\n    \"approverList\": [\r\n        {\r\n            \"seq\": 1,\r\n            \"userId\": \"test1\"\r\n        },\r\n        {\r\n            \"seq\": 2,\r\n            \"userId\": \"test2\"\r\n        },\r\n        {\r\n            \"seq\": 3,\r\n            \"userId\": \"test3\"\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1.0/user/document",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1.0",
+										"user",
+										"document"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "문서 생성",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "X-AUTH-TOKEN",
+												"value": "{{X-AUTH-TOKEN}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"title\": \"문서의 제목을 입력해 주세요.\",\r\n    \"classification\": \"REPORT\",\r\n    \"content\": \"문서의 내용을 입력해 주세요.\",\r\n    \"approverList\": [\r\n        {\r\n            \"seq\": 1,\r\n            \"userId\": \"test1\"\r\n        },\r\n        {\r\n            \"seq\": 2,\r\n            \"userId\": \"test2\"\r\n        },\r\n        {\r\n            \"seq\": 3,\r\n            \"userId\": \"test3\"\r\n        }\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/api/v1.0/user/document",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"api",
+												"v1.0",
+												"user",
+												"document"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Vary",
+											"value": "Origin"
+										},
+										{
+											"key": "Vary",
+											"value": "Access-Control-Request-Method"
+										},
+										{
+											"key": "Vary",
+											"value": "Access-Control-Request-Headers"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 31 Mar 2021 17:54:26 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"documentId\": 3,\n    \"title\": \"문서의 제목을 입력해 주세요.\",\n    \"classification\": \"REPORT\",\n    \"content\": \"문서의 내용을 입력해 주세요.\",\n    \"approvalStatus\": \"APPROVING\",\n    \"createUserId\": \"test1\",\n    \"createdAt\": \"2021-03-31T17:54:26.449\",\n    \"updateUserId\": \"test1\",\n    \"updatedAt\": \"2021-03-31T17:54:26.449\",\n    \"approverList\": [\n        {\n            \"seq\": 1,\n            \"userId\": \"test1\",\n            \"approvalYn\": false,\n            \"approvalStatus\": \"APPROVING\",\n            \"comment\": \"\"\n        },\n        {\n            \"seq\": 2,\n            \"userId\": \"test2\",\n            \"approvalYn\": false,\n            \"approvalStatus\": \"WAITING\",\n            \"comment\": \"\"\n        },\n        {\n            \"seq\": 3,\n            \"userId\": \"test3\",\n            \"approvalYn\": false,\n            \"approvalStatus\": \"WAITING\",\n            \"comment\": \"\"\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "문서 조회",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-AUTH-TOKEN",
+										"value": "{{X-AUTH-TOKEN}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1.0/user/document/1",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1.0",
+										"user",
+										"document",
+										"1"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "문서 조회",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "X-AUTH-TOKEN",
+												"value": "{{X-AUTH-TOKEN}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{BASE_URL}}/api/v1.0/user/document/1",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"api",
+												"v1.0",
+												"user",
+												"document",
+												"1"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Vary",
+											"value": "Origin"
+										},
+										{
+											"key": "Vary",
+											"value": "Access-Control-Request-Method"
+										},
+										{
+											"key": "Vary",
+											"value": "Access-Control-Request-Headers"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 31 Mar 2021 17:54:45 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"documentId\": 1,\n    \"title\": \"문서의 제목을 입력해 주세요.\",\n    \"classification\": \"REPORT\",\n    \"content\": \"문서의 내용을 입력해 주세요.\",\n    \"approvalStatus\": \"APPROVING\",\n    \"createUserId\": \"test1\",\n    \"createdAt\": \"2021-03-31T17:53:37.28\",\n    \"updateUserId\": \"test1\",\n    \"updatedAt\": \"2021-03-31T17:53:37.28\",\n    \"approverList\": [\n        {\n            \"seq\": 1,\n            \"userId\": \"test3\",\n            \"approvalYn\": false,\n            \"approvalStatus\": \"APPROVING\",\n            \"comment\": \"\"\n        },\n        {\n            \"seq\": 2,\n            \"userId\": \"test3\",\n            \"approvalYn\": false,\n            \"approvalStatus\": \"WAITING\",\n            \"comment\": \"\"\n        },\n        {\n            \"seq\": 3,\n            \"userId\": \"test3\",\n            \"approvalYn\": false,\n            \"approvalStatus\": \"WAITING\",\n            \"comment\": \"\"\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "문서목록 조회(OUTBOX)",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-AUTH-TOKEN",
+										"value": "{{X-AUTH-TOKEN}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1.0/user/document/list/outbox",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1.0",
+										"user",
+										"document",
+										"list",
+										"outbox"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "문서목록 조회(OUTBOX)",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "X-AUTH-TOKEN",
+												"value": "{{X-AUTH-TOKEN}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{BASE_URL}}/api/v1.0/user/document/list/outbox",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"api",
+												"v1.0",
+												"user",
+												"document",
+												"list",
+												"outbox"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Vary",
+											"value": "Origin"
+										},
+										{
+											"key": "Vary",
+											"value": "Access-Control-Request-Method"
+										},
+										{
+											"key": "Vary",
+											"value": "Access-Control-Request-Headers"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 31 Mar 2021 17:54:47 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"total\": 3,\n    \"documentList\": [\n        {\n            \"documentId\": 1,\n            \"title\": \"문서의 제목을 입력해 주세요.\",\n            \"classification\": \"REPORT\",\n            \"content\": \"문서의 내용을 입력해 주세요.\",\n            \"approvalStatus\": \"APPROVING\",\n            \"createUserId\": \"test1\",\n            \"createdAt\": \"2021-03-31T17:53:37.28\",\n            \"updateUserId\": \"test1\",\n            \"updatedAt\": \"2021-03-31T17:53:37.28\",\n            \"approverList\": [\n                {\n                    \"seq\": 1,\n                    \"userId\": \"test3\",\n                    \"approvalYn\": false,\n                    \"approvalStatus\": \"APPROVING\",\n                    \"comment\": \"\"\n                },\n                {\n                    \"seq\": 2,\n                    \"userId\": \"test3\",\n                    \"approvalYn\": false,\n                    \"approvalStatus\": \"WAITING\",\n                    \"comment\": \"\"\n                },\n                {\n                    \"seq\": 3,\n                    \"userId\": \"test3\",\n                    \"approvalYn\": false,\n                    \"approvalStatus\": \"WAITING\",\n                    \"comment\": \"\"\n                }\n            ]\n        },\n        {\n            \"documentId\": 3,\n            \"title\": \"문서의 제목을 입력해 주세요.\",\n            \"classification\": \"REPORT\",\n            \"content\": \"문서의 내용을 입력해 주세요.\",\n            \"approvalStatus\": \"APPROVING\",\n            \"createUserId\": \"test1\",\n            \"createdAt\": \"2021-03-31T17:54:26.449\",\n            \"updateUserId\": \"test1\",\n            \"updatedAt\": \"2021-03-31T17:54:26.449\",\n            \"approverList\": [\n                {\n                    \"seq\": 1,\n                    \"userId\": \"test1\",\n                    \"approvalYn\": false,\n                    \"approvalStatus\": \"APPROVING\",\n                    \"comment\": \"\"\n                },\n                {\n                    \"seq\": 2,\n                    \"userId\": \"test2\",\n                    \"approvalYn\": false,\n                    \"approvalStatus\": \"WAITING\",\n                    \"comment\": \"\"\n                },\n                {\n                    \"seq\": 3,\n                    \"userId\": \"test3\",\n                    \"approvalYn\": false,\n                    \"approvalStatus\": \"WAITING\",\n                    \"comment\": \"\"\n                }\n            ]\n        },\n        {\n            \"documentId\": 4,\n            \"title\": \"문서의 제목을 입력해 주세요.\",\n            \"classification\": \"REPORT\",\n            \"content\": \"문서의 내용을 입력해 주세요.\",\n            \"approvalStatus\": \"APPROVING\",\n            \"createUserId\": \"test1\",\n            \"createdAt\": \"2021-03-31T17:54:43.38\",\n            \"updateUserId\": \"test1\",\n            \"updatedAt\": \"2021-03-31T17:54:43.38\",\n            \"approverList\": [\n                {\n                    \"seq\": 1,\n                    \"userId\": \"test1\",\n                    \"approvalYn\": false,\n                    \"approvalStatus\": \"APPROVING\",\n                    \"comment\": \"\"\n                },\n                {\n                    \"seq\": 2,\n                    \"userId\": \"test2\",\n                    \"approvalYn\": false,\n                    \"approvalStatus\": \"WAITING\",\n                    \"comment\": \"\"\n                },\n                {\n                    \"seq\": 3,\n                    \"userId\": \"test3\",\n                    \"approvalYn\": false,\n                    \"approvalStatus\": \"WAITING\",\n                    \"comment\": \"\"\n                }\n            ]\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "문서목록 조회(INBOX)",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-AUTH-TOKEN",
+										"value": "{{X-AUTH-TOKEN}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1.0/user/document/list/inbox",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1.0",
+										"user",
+										"document",
+										"list",
+										"inbox"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "문서목록 조회(INBOX)",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "X-AUTH-TOKEN",
+												"value": "{{X-AUTH-TOKEN}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{BASE_URL}}/api/v1.0/user/document/list/inbox",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"api",
+												"v1.0",
+												"user",
+												"document",
+												"list",
+												"inbox"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Vary",
+											"value": "Origin"
+										},
+										{
+											"key": "Vary",
+											"value": "Access-Control-Request-Method"
+										},
+										{
+											"key": "Vary",
+											"value": "Access-Control-Request-Headers"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 31 Mar 2021 17:54:57 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"total\": 2,\n    \"documentList\": [\n        {\n            \"documentId\": 3,\n            \"title\": \"문서의 제목을 입력해 주세요.\",\n            \"classification\": \"REPORT\",\n            \"content\": \"문서의 내용을 입력해 주세요.\",\n            \"approvalStatus\": \"APPROVING\",\n            \"createUserId\": \"test1\",\n            \"createdAt\": \"2021-03-31T17:54:26.449\",\n            \"updateUserId\": \"test1\",\n            \"updatedAt\": \"2021-03-31T17:54:26.449\",\n            \"approverList\": [\n                {\n                    \"seq\": 1,\n                    \"userId\": \"test1\",\n                    \"approvalYn\": false,\n                    \"approvalStatus\": \"APPROVING\",\n                    \"comment\": \"\"\n                },\n                {\n                    \"seq\": 2,\n                    \"userId\": \"test2\",\n                    \"approvalYn\": false,\n                    \"approvalStatus\": \"WAITING\",\n                    \"comment\": \"\"\n                },\n                {\n                    \"seq\": 3,\n                    \"userId\": \"test3\",\n                    \"approvalYn\": false,\n                    \"approvalStatus\": \"WAITING\",\n                    \"comment\": \"\"\n                }\n            ]\n        },\n        {\n            \"documentId\": 4,\n            \"title\": \"문서의 제목을 입력해 주세요.\",\n            \"classification\": \"REPORT\",\n            \"content\": \"문서의 내용을 입력해 주세요.\",\n            \"approvalStatus\": \"APPROVING\",\n            \"createUserId\": \"test1\",\n            \"createdAt\": \"2021-03-31T17:54:43.38\",\n            \"updateUserId\": \"test1\",\n            \"updatedAt\": \"2021-03-31T17:54:43.38\",\n            \"approverList\": [\n                {\n                    \"seq\": 1,\n                    \"userId\": \"test1\",\n                    \"approvalYn\": false,\n                    \"approvalStatus\": \"APPROVING\",\n                    \"comment\": \"\"\n                },\n                {\n                    \"seq\": 2,\n                    \"userId\": \"test2\",\n                    \"approvalYn\": false,\n                    \"approvalStatus\": \"WAITING\",\n                    \"comment\": \"\"\n                },\n                {\n                    \"seq\": 3,\n                    \"userId\": \"test3\",\n                    \"approvalYn\": false,\n                    \"approvalStatus\": \"WAITING\",\n                    \"comment\": \"\"\n                }\n            ]\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "문서목록 조회(ARCHIVE)",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-AUTH-TOKEN",
+										"value": "{{X-AUTH-TOKEN}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1.0/user/document/list/archive",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1.0",
+										"user",
+										"document",
+										"list",
+										"archive"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "문서목록 조회(ARCHIVE)",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "X-AUTH-TOKEN",
+												"value": "{{X-AUTH-TOKEN}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{BASE_URL}}/api/v1.0/user/document/list/archive",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"api",
+												"v1.0",
+												"user",
+												"document",
+												"list",
+												"archive"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Vary",
+											"value": "Origin"
+										},
+										{
+											"key": "Vary",
+											"value": "Access-Control-Request-Method"
+										},
+										{
+											"key": "Vary",
+											"value": "Access-Control-Request-Headers"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 31 Mar 2021 17:55:19 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"total\": 1,\n    \"documentList\": [\n        {\n            \"documentId\": 3,\n            \"title\": \"문서의 제목을 입력해 주세요.\",\n            \"classification\": \"REPORT\",\n            \"content\": \"문서의 내용을 입력해 주세요.\",\n            \"approvalStatus\": \"REJECTED\",\n            \"createUserId\": \"test1\",\n            \"createdAt\": \"2021-03-31T17:54:26.449\",\n            \"updateUserId\": \"test1\",\n            \"updatedAt\": \"2021-03-31T17:55:16.42\",\n            \"approverList\": [\n                {\n                    \"seq\": 1,\n                    \"userId\": \"test1\",\n                    \"approvalYn\": true,\n                    \"approvalStatus\": \"REJECTED\",\n                    \"comment\": \"반려 첨언 입니다.\"\n                },\n                {\n                    \"seq\": 2,\n                    \"userId\": \"test2\",\n                    \"approvalYn\": false,\n                    \"approvalStatus\": \"WAITING\",\n                    \"comment\": \"\"\n                },\n                {\n                    \"seq\": 3,\n                    \"userId\": \"test3\",\n                    \"approvalYn\": false,\n                    \"approvalStatus\": \"WAITING\",\n                    \"comment\": \"\"\n                }\n            ]\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "결재",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "X-AUTH-TOKEN",
+										"value": "{{X-AUTH-TOKEN}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"comment\": \"승인 첨언 입니다.\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1.0/user/document/1/approve",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1.0",
+										"user",
+										"document",
+										"1",
+										"approve"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "반려",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "X-AUTH-TOKEN",
+										"value": "{{X-AUTH-TOKEN}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"comment\": \"반려 첨언 입니다.\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1.0/user/document/2/reject",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1.0",
+										"user",
+										"document",
+										"2",
+										"reject"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}

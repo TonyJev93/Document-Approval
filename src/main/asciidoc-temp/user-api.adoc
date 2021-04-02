@@ -1,0 +1,28 @@
+
+== 회원 API
+
+=== 회원 가입
+==== 요청 필드
+include::{snippets}/user-controller-test/create-user/request-fields.adoc[]
+
+==== 요청 예시
+include::{snippets}/user-controller-test/create-user/curl-request.adoc[]
+
+==== 응답 필드
+include::{snippets}/user-controller-test/create-user/response-fields.adoc[]
+
+==== 응답 예시
+include::{snippets}/user-controller-test/create-user/http-response.adoc[]
+
+=== 로그인
+==== 요청 필드
+include::{snippets}/user-controller-test/login/request-fields.adoc[]
+
+==== 요청 예시
+include::{snippets}/user-controller-test/login/curl-request.adoc[]
+
+==== 응답 필드
+include::{snippets}/user-controller-test/login/response-fields.adoc[]
+
+==== 응답 예시
+include::{snippets}/user-controller-test/login/http-response.adoc[]

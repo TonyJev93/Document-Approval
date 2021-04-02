@@ -1,0 +1,70 @@
+[
+  {
+    "id": 1,
+    "title": "문서의 제목을 입력해 주세요.",
+    "classification": "REPORT",
+    "content": "문서의 내용을 입력해 주세요.",
+    "approvalStatus": "REJECTED",
+    "createUserId": "test1",
+    "createdAt": "2021-03-31T00:26:35.766544",
+    "updateUserId": "test1",
+    "updatedAt": "2021-03-31T02:25:05.849103",
+    "approverList": [
+      {
+        "seq": 1,
+        "userId": "test1",
+        "approvalYn": true,
+        "approvalStatus": "APPROVED",
+        "comment": "승인 첨언 입니다."
+      },
+      {
+        "seq": 2,
+        "userId": "test1",
+        "approvalYn": true,
+        "approvalStatus": "REJECTED",
+        "comment": "반려 첨언 입니다."
+      },
+      {
+        "seq": 3,
+        "userId": "test3",
+        "approvalYn": false,
+        "approvalStatus": "WAITING",
+        "comment": ""
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "문서의 제목을 입력해 주세요.",
+    "classification": "REPORT",
+    "content": "문서의 내용을 입력해 주세요.",
+    "approvalStatus": "REJECTED",
+    "createUserId": "test1",
+    "createdAt": "2021-03-31T01:06:44.862448",
+    "updateUserId": "test3",
+    "updatedAt": "2021-03-31T02:26:00.424581",
+    "approverList": [
+      {
+        "seq": 1,
+        "userId": "test1",
+        "approvalYn": true,
+        "approvalStatus": "APPROVED",
+        "comment": "승인 첨언 입니다."
+      },
+      {
+        "seq": 2,
+        "userId": "test2",
+        "approvalYn": true,
+        "approvalStatus": "APPROVED",
+        "comment": "승인 첨언 입니다."
+      },
+      {
+        "seq": 3,
+        "userId": "test3",
+        "approvalYn": true,
+        "approvalStatus": "REJECTED",
+        "comment": "반려 첨언 입니다."
+      }
+    ]
+  }
+]

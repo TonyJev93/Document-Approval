@@ -1,0 +1,19 @@
+{
+  "title": "문서의 제목을 입력해 주세요.",
+  "classification": "REPORT",
+  "content": "문서의 내용을 입력해 주세요.",
+  "approverList": [
+    {
+      "seq": 1,
+      "userId": "test1"
+    },
+    {
+      "seq": 2,
+      "userId": "test2"
+    },
+    {
+      "seq": 3,
+      "userId": "test3"
+    }
+  ]
+}

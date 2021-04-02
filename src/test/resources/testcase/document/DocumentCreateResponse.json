@@ -1,0 +1,34 @@
+{
+  "id": 1,
+  "title": "문서의 제목을 입력해 주세요.",
+  "classification": "REPORT",
+  "content": "문서의 내용을 입력해 주세요.",
+  "approvalStatus": "APPROVING",
+  "createUserId": "test1",
+  "createdAt": "2021-03-31T02:31:37.8659585",
+  "updateUserId": "test1",
+  "updatedAt": "2021-03-31T02:31:37.8659585",
+  "approverList": [
+    {
+      "seq": 1,
+      "userId": "test1",
+      "approvalYn": false,
+      "approvalStatus": "APPROVING",
+      "comment": ""
+    },
+    {
+      "seq": 2,
+      "userId": "test2",
+      "approvalYn": false,
+      "approvalStatus": "WAITING",
+      "comment": ""
+    },
+    {
+      "seq": 3,
+      "userId": "test3",
+      "approvalYn": false,
+      "approvalStatus": "WAITING",
+      "comment": ""
+    }
+  ]
+}
